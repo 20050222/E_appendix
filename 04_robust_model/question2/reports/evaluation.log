@@ -1,0 +1,114 @@
+FROZEN {"protocol": "q2-v2", "iteration_note": "V1 test was already observed; V2 is an audit repair iteration using a reused holdout, not a new blind test.", "selection_rule": "lowest mean projected validation MAE+1-MacroF1 across 5 preset conditions, then lowest numeric seed for representative model", "variant_mean_score": {"fusion_aug": 1.093771533831087, "fusion_clean": 1.094215579425857, "robust_nogate": 1.0928945666548389, "robust_norec": 1.0854873606376954, "robust_rec": 1.0856832687515818, "text_only": 1.1057463948978876}, "variant_seed_counts": {"fusion_aug": 3, "fusion_clean": 3, "robust_nogate": 3, "robust_norec": 3, "robust_rec": 3, "text_only": 3}, "selected_variant": "robust_norec", "selected_seed": 42, "checkpoint": "artifacts/runs/robust_norec_seed42/best.pt", "sha256": "1eba74c875706533f890829881932544128d2ea6b5a8315b0fe1670294ba5904", "test_used_for_selection": false, "special_used_for_selection": false, "mask_seeds": [20260924, 20260925, 20260926], "output_rule": "argmax polarity; Neutral->0; Negative->min(raw,-1e-6); Positive->max(raw,1e-6); checkpoint and variant selection use these same projected metrics."}
+CORE fusion_aug 42
+CORE fusion_aug 43
+CORE fusion_aug 44
+CORE fusion_clean 42
+CORE fusion_clean 43
+CORE fusion_clean 44
+CORE robust_nogate 42
+CORE robust_nogate 43
+CORE robust_nogate 44
+CORE robust_norec 42
+CORE robust_norec 43
+CORE robust_norec 44
+CORE robust_rec 42
+CORE robust_rec 43
+CORE robust_rec 44
+CORE text_only 42
+CORE text_only 43
+CORE text_only 44
+SCENARIO robust_norec clean 0 random block
+SCENARIO robust_norec T 0.1 random block
+SCENARIO robust_norec T 0.3 random block
+SCENARIO robust_norec T 0.5 random block
+SCENARIO robust_norec T 0.7 random block
+SCENARIO robust_norec A 0.1 random block
+SCENARIO robust_norec A 0.3 random block
+SCENARIO robust_norec A 0.5 random block
+SCENARIO robust_norec A 0.7 random block
+SCENARIO robust_norec V 0.1 random block
+SCENARIO robust_norec V 0.3 random block
+SCENARIO robust_norec V 0.5 random block
+SCENARIO robust_norec V 0.7 random block
+SCENARIO robust_norec TA 0.1 random block
+SCENARIO robust_norec TA 0.3 random block
+SCENARIO robust_norec TA 0.5 random block
+SCENARIO robust_norec TA 0.7 random block
+SCENARIO robust_norec TV 0.1 random block
+SCENARIO robust_norec TV 0.3 random block
+SCENARIO robust_norec TV 0.5 random block
+SCENARIO robust_norec TV 0.7 random block
+SCENARIO robust_norec AV 0.1 random block
+SCENARIO robust_norec AV 0.3 random block
+SCENARIO robust_norec AV 0.5 random block
+SCENARIO robust_norec AV 0.7 random block
+SCENARIO robust_norec TAV 0.1 random block
+SCENARIO robust_norec TAV 0.3 random block
+SCENARIO robust_norec TAV 0.5 random block
+SCENARIO robust_norec TAV 0.7 random block
+SCENARIO robust_norec T 0.3 front block
+SCENARIO robust_norec T 0.3 middle block
+SCENARIO robust_norec T 0.3 back block
+SCENARIO robust_norec T 0.3 random block
+SCENARIO robust_norec T 0.3 random two_blocks
+SCENARIO robust_norec T 0.3 random points
+SCENARIO robust_norec A 0.3 front block
+SCENARIO robust_norec A 0.3 middle block
+SCENARIO robust_norec A 0.3 back block
+SCENARIO robust_norec A 0.3 random block
+SCENARIO robust_norec A 0.3 random two_blocks
+SCENARIO robust_norec A 0.3 random points
+SCENARIO robust_norec V 0.3 front block
+SCENARIO robust_norec V 0.3 middle block
+SCENARIO robust_norec V 0.3 back block
+SCENARIO robust_norec V 0.3 random block
+SCENARIO robust_norec V 0.3 random two_blocks
+SCENARIO robust_norec V 0.3 random points
+SCENARIO fusion_clean clean 0 random block
+SCENARIO fusion_clean T 0.1 random block
+SCENARIO fusion_clean T 0.3 random block
+SCENARIO fusion_clean T 0.5 random block
+SCENARIO fusion_clean T 0.7 random block
+SCENARIO fusion_clean A 0.1 random block
+SCENARIO fusion_clean A 0.3 random block
+SCENARIO fusion_clean A 0.5 random block
+SCENARIO fusion_clean A 0.7 random block
+SCENARIO fusion_clean V 0.1 random block
+SCENARIO fusion_clean V 0.3 random block
+SCENARIO fusion_clean V 0.5 random block
+SCENARIO fusion_clean V 0.7 random block
+SCENARIO fusion_clean TA 0.1 random block
+SCENARIO fusion_clean TA 0.3 random block
+SCENARIO fusion_clean TA 0.5 random block
+SCENARIO fusion_clean TA 0.7 random block
+SCENARIO fusion_clean TV 0.1 random block
+SCENARIO fusion_clean TV 0.3 random block
+SCENARIO fusion_clean TV 0.5 random block
+SCENARIO fusion_clean TV 0.7 random block
+SCENARIO fusion_clean AV 0.1 random block
+SCENARIO fusion_clean AV 0.3 random block
+SCENARIO fusion_clean AV 0.5 random block
+SCENARIO fusion_clean AV 0.7 random block
+SCENARIO fusion_clean TAV 0.1 random block
+SCENARIO fusion_clean TAV 0.3 random block
+SCENARIO fusion_clean TAV 0.5 random block
+SCENARIO fusion_clean TAV 0.7 random block
+SCENARIO fusion_clean T 0.3 front block
+SCENARIO fusion_clean T 0.3 middle block
+SCENARIO fusion_clean T 0.3 back block
+SCENARIO fusion_clean T 0.3 random block
+SCENARIO fusion_clean T 0.3 random two_blocks
+SCENARIO fusion_clean T 0.3 random points
+SCENARIO fusion_clean A 0.3 front block
+SCENARIO fusion_clean A 0.3 middle block
+SCENARIO fusion_clean A 0.3 back block
+SCENARIO fusion_clean A 0.3 random block
+SCENARIO fusion_clean A 0.3 random two_blocks
+SCENARIO fusion_clean A 0.3 random points
+SCENARIO fusion_clean V 0.3 front block
+SCENARIO fusion_clean V 0.3 middle block
+SCENARIO fusion_clean V 0.3 back block
+SCENARIO fusion_clean V 0.3 random block
+SCENARIO fusion_clean V 0.3 random two_blocks
+SCENARIO fusion_clean V 0.3 random points
+DONE 30 special predictions

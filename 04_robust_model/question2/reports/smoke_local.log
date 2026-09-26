@@ -1,0 +1,2 @@
+{"start": "robust_rec_seed42", "device": "cpu", "parameters": 4501074}
+{"run": "robust_rec_seed42", "epoch": 1, "loss": 0.9711, "score": 1.9282, "clean_mae": 1.0208, "clean_f1": 0.0926, "TAV30_mae": 1.0208, "seconds": 0.2, "best": true}

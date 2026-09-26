@@ -1,0 +1,52 @@
+{
+  "ready_for_q3_inference": true,
+  "required_q2_artifacts": {
+    "checkpoint": {
+      "status": "present",
+      "path": "04_robust_model\\question2\\artifacts\\final_model.pt",
+      "sha256": "af87eff66f6a76d36530807c0b65d3063fe280b89e12682700e2e9c1ce134315",
+      "size_bytes": 18046731,
+      "source": "file"
+    },
+    "normalization": {
+      "status": "present",
+      "path": "04_robust_model\\question2\\artifacts\\normalization.npz",
+      "sha256": "5a805d48355fa3ecc7365b9a82f69fe230ec6cb637264339c216d4d9a98cd280",
+      "size_bytes": 1902,
+      "source": "file"
+    },
+    "inference_source": {
+      "status": "present",
+      "path": "04_robust_model\\question2\\src\\infer.py",
+      "sha256": "f5d622b6f622812e3a2a1e1e68f7d570b9a939fae753982de958b3f1d38150ab",
+      "size_bytes": 1112,
+      "source": "file"
+    },
+    "model_source": {
+      "status": "present",
+      "path": "04_robust_model\\question2\\src\\model.py",
+      "sha256": "3b34374813fbca8ac5636070bfa6e4e4c0c7b8267a6afeacfbc7f0801b9eab68",
+      "size_bytes": 5276,
+      "source": "file"
+    },
+    "model_config": {
+      "status": "present",
+      "path": "04_robust_model\\question2\\artifacts\\final_model.pt",
+      "sha256": "af87eff66f6a76d36530807c0b65d3063fe280b89e12682700e2e9c1ce134315",
+      "size_bytes": 18046731,
+      "source": "embedded_in_checkpoint"
+    }
+  },
+  "q3_inputs": {
+    "attachment4_manifest": {
+      "status": "present",
+      "path": "05_explainable_model\\data\\attachment4_manifest.csv"
+    },
+    "attachment4_schema": {
+      "status": "present",
+      "path": "05_explainable_model\\data\\attachment4_schema.json"
+    }
+  },
+  "q2_root": "E:\\myProject\\postgraduate\\Coding\\CPMCM\\E_workspace\\04_robust_model\\question2",
+  "note": "A missing checkpoint or preprocessing artifact blocks prediction and explanation generation."
+}

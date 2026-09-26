@@ -1,0 +1,22 @@
+{
+  "sample_count": 100,
+  "complete_count": 90,
+  "incomplete_count": 10,
+  "modality_pass_counts": {
+    "text": 100,
+    "audio": 100,
+    "vision": 90
+  },
+  "valid_bin_totals": {
+    "text": 2259,
+    "audio": 4957,
+    "vision": 3865
+  },
+  "alignment": "50 equal-duration bins over each video's duration for audio/vision; text uses uniform token bins and is not word-timestamp aligned",
+  "feature_dims": {
+    "text": 768,
+    "audio": 74,
+    "vision": 35
+  },
+  "output_dir": "E:\\myProject\\postgraduate\\Coding\\CPMCM\\E_workspace\\02_features_q1\\stepE_alignment\\data\\aligned_50"
+}

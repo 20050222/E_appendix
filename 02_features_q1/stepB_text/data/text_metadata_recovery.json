@@ -1,0 +1,14 @@
+{
+  "recovered_from": [
+    "stepA_index/data/sample_index.csv",
+    "text_token_map.jsonl",
+    "text_feature_validation.csv",
+    "text_features/bert-base-uncased/{sample_id}.npz",
+    "text_feature_run.json"
+  ],
+  "sample_count": 100,
+  "status_counts": {
+    "PASS": 100
+  },
+  "warning": "Do not edit/save these machine-readable CSV files with spreadsheet formula inference enabled."
+}

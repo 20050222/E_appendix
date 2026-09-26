@@ -1,0 +1,56 @@
+# E题环境总览
+#
+# 可安装环境已拆分为两个文件：
+# - environment_cpu.yaml：集成显卡/CPU，device=cpu
+# - environment_cuda4090.yaml：RTX 4090，device=cuda:0，CUDA runtime=12.6
+#
+# 创建环境示例：
+# conda env create -f environment_cpu.yaml
+# conda env create -f environment_cuda4090.yaml
+#
+# 两套环境都固定 random_seed=42。不要在同一次实验中混用两套环境，
+# 也不要把集成显卡配置写成 cuda:0。
+
+schema_version: 2
+project: CPMCM-E
+random_seed: 42
+
+profiles:
+  integrated_graphics_cpu:
+    file: environment_cpu.yaml
+    python: "3.11.9"
+    pytorch: "2.6.0"
+    cuda: "cpu"
+    numpy: "1.26.4"
+    pandas: "2.2.3"
+    transformers: "4.49.0"
+    librosa: "0.10.2.post1"
+    opencv: "4.11.0.86"
+    mediapipe: "0.10.21"
+    imageio_ffmpeg: "0.6.0"
+    matplotlib: "3.9.4"
+    openpyxl: "3.1.5"
+    device: "cpu"
+
+  rtx4090:
+    file: environment_cuda4090.yaml
+    python: "3.11.9"
+    pytorch: "2.6.0"
+    cuda: "12.6"
+    numpy: "1.26.4"
+    pandas: "2.2.3"
+    transformers: "4.49.0"
+    librosa: "0.10.2.post1"
+    opencv: "4.11.0.86"
+    mediapipe: "0.10.21"
+    imageio_ffmpeg: "0.6.0"
+    matplotlib: "3.9.4"
+    openpyxl: "3.1.5"
+    device: "cuda:0"
+
+hardware_observation:
+  gpu_name: "NVIDIA GeForce RTX 4090"
+  gpu_memory: "24564 MiB reported by nvidia-smi"
+  driver_version: "595.91.07"
+  driver_cuda_api: "13.2"
+  compatibility_note: "PyTorch uses CUDA 12.6 runtime; 13.2 is the driver CUDA API version."

@@ -1,0 +1,9 @@
+{
+  "python": "3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:27:10) [MSC v.1938 64 bit (AMD64)]",
+  "opencv": "4.11.0",
+  "mediapipe": "0.10.21",
+  "numpy": "1.26.4",
+  "elapsed_sec": 159.8095588684082,
+  "sample_count": 100,
+  "feature_schema": "face35_v1"
+}

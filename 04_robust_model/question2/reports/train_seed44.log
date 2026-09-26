@@ -1,0 +1,66 @@
+{"start": "fusion_clean_seed44", "device": "cpu", "parameters": 4501074}
+{"run": "fusion_clean_seed44", "epoch": 1, "loss": 1.0668, "score": 1.2943, "clean_mae": 0.701, "clean_f1": 0.4148, "TAV30_mae": 0.7054, "seconds": 8.1, "best": true}
+{"run": "fusion_clean_seed44", "epoch": 2, "loss": 0.9198, "score": 1.2321, "clean_mae": 0.6899, "clean_f1": 0.4667, "TAV30_mae": 0.7051, "seconds": 8.0, "best": true}
+{"run": "fusion_clean_seed44", "epoch": 3, "loss": 0.8153, "score": 1.2029, "clean_mae": 0.6899, "clean_f1": 0.508, "TAV30_mae": 0.7102, "seconds": 8.3, "best": true}
+{"run": "fusion_clean_seed44", "epoch": 4, "loss": 0.7293, "score": 1.1105, "clean_mae": 0.6579, "clean_f1": 0.5561, "TAV30_mae": 0.6607, "seconds": 8.8, "best": true}
+{"run": "fusion_clean_seed44", "epoch": 5, "loss": 0.6626, "score": 1.0881, "clean_mae": 0.6398, "clean_f1": 0.5675, "TAV30_mae": 0.6537, "seconds": 10.1, "best": true}
+{"run": "fusion_clean_seed44", "epoch": 6, "loss": 0.6111, "score": 1.0879, "clean_mae": 0.6377, "clean_f1": 0.5659, "TAV30_mae": 0.6482, "seconds": 10.4, "best": true}
+{"run": "fusion_clean_seed44", "epoch": 7, "loss": 0.5657, "score": 1.1162, "clean_mae": 0.659, "clean_f1": 0.5473, "TAV30_mae": 0.6627, "seconds": 10.0, "best": false}
+{"run": "fusion_clean_seed44", "epoch": 8, "loss": 0.5069, "score": 1.1232, "clean_mae": 0.6601, "clean_f1": 0.5557, "TAV30_mae": 0.6713, "seconds": 9.3, "best": false}
+{"run": "fusion_clean_seed44", "epoch": 9, "loss": 0.459, "score": 1.1435, "clean_mae": 0.6794, "clean_f1": 0.5406, "TAV30_mae": 0.688, "seconds": 9.5, "best": false}
+{"run": "fusion_clean_seed44", "epoch": 10, "loss": 0.4438, "score": 1.1499, "clean_mae": 0.6782, "clean_f1": 0.5445, "TAV30_mae": 0.6888, "seconds": 9.2, "best": false}
+{"run": "fusion_clean_seed44", "epoch": 11, "loss": 0.4086, "score": 1.1279, "clean_mae": 0.6682, "clean_f1": 0.5553, "TAV30_mae": 0.6767, "seconds": 9.4, "best": false}
+{"start": "fusion_aug_seed44", "device": "cpu", "parameters": 4501074}
+{"run": "fusion_aug_seed44", "epoch": 1, "loss": 1.0805, "score": 1.3102, "clean_mae": 0.7134, "clean_f1": 0.4154, "TAV30_mae": 0.7265, "seconds": 9.9, "best": true}
+{"run": "fusion_aug_seed44", "epoch": 2, "loss": 0.9589, "score": 1.2631, "clean_mae": 0.7076, "clean_f1": 0.4574, "TAV30_mae": 0.7237, "seconds": 9.7, "best": true}
+{"run": "fusion_aug_seed44", "epoch": 3, "loss": 0.8861, "score": 1.2153, "clean_mae": 0.688, "clean_f1": 0.4775, "TAV30_mae": 0.7031, "seconds": 9.8, "best": true}
+{"run": "fusion_aug_seed44", "epoch": 4, "loss": 0.8222, "score": 1.0926, "clean_mae": 0.6458, "clean_f1": 0.5659, "TAV30_mae": 0.6618, "seconds": 9.6, "best": true}
+{"run": "fusion_aug_seed44", "epoch": 5, "loss": 0.776, "score": 1.1114, "clean_mae": 0.6545, "clean_f1": 0.5554, "TAV30_mae": 0.6663, "seconds": 9.8, "best": false}
+{"run": "fusion_aug_seed44", "epoch": 6, "loss": 0.7232, "score": 1.0961, "clean_mae": 0.6449, "clean_f1": 0.5543, "TAV30_mae": 0.6571, "seconds": 9.4, "best": false}
+{"run": "fusion_aug_seed44", "epoch": 7, "loss": 0.7069, "score": 1.1619, "clean_mae": 0.6888, "clean_f1": 0.5288, "TAV30_mae": 0.6888, "seconds": 9.6, "best": false}
+{"run": "fusion_aug_seed44", "epoch": 8, "loss": 0.6526, "score": 1.1112, "clean_mae": 0.6481, "clean_f1": 0.5496, "TAV30_mae": 0.6629, "seconds": 9.7, "best": false}
+{"run": "fusion_aug_seed44", "epoch": 9, "loss": 0.6101, "score": 1.1315, "clean_mae": 0.6761, "clean_f1": 0.5604, "TAV30_mae": 0.6889, "seconds": 9.7, "best": false}
+{"start": "robust_norec_seed44", "device": "cpu", "parameters": 4501074}
+{"run": "robust_norec_seed44", "epoch": 1, "loss": 1.0798, "score": 1.3328, "clean_mae": 0.7299, "clean_f1": 0.4097, "TAV30_mae": 0.7301, "seconds": 9.8, "best": true}
+{"run": "robust_norec_seed44", "epoch": 2, "loss": 0.9638, "score": 1.2712, "clean_mae": 0.7101, "clean_f1": 0.4629, "TAV30_mae": 0.7254, "seconds": 10.1, "best": true}
+{"run": "robust_norec_seed44", "epoch": 3, "loss": 0.8896, "score": 1.2318, "clean_mae": 0.6987, "clean_f1": 0.4678, "TAV30_mae": 0.7115, "seconds": 10.1, "best": true}
+{"run": "robust_norec_seed44", "epoch": 4, "loss": 0.8194, "score": 1.0785, "clean_mae": 0.6327, "clean_f1": 0.5675, "TAV30_mae": 0.6551, "seconds": 10.1, "best": true}
+{"run": "robust_norec_seed44", "epoch": 5, "loss": 0.7717, "score": 1.0807, "clean_mae": 0.6427, "clean_f1": 0.5729, "TAV30_mae": 0.6574, "seconds": 10.2, "best": false}
+{"run": "robust_norec_seed44", "epoch": 6, "loss": 0.725, "score": 1.0787, "clean_mae": 0.6352, "clean_f1": 0.5682, "TAV30_mae": 0.6515, "seconds": 10.4, "best": false}
+{"run": "robust_norec_seed44", "epoch": 7, "loss": 0.6974, "score": 1.165, "clean_mae": 0.6932, "clean_f1": 0.5442, "TAV30_mae": 0.6998, "seconds": 10.5, "best": false}
+{"run": "robust_norec_seed44", "epoch": 8, "loss": 0.6441, "score": 1.1193, "clean_mae": 0.6628, "clean_f1": 0.5499, "TAV30_mae": 0.6768, "seconds": 10.3, "best": false}
+{"run": "robust_norec_seed44", "epoch": 9, "loss": 0.5987, "score": 1.1121, "clean_mae": 0.6607, "clean_f1": 0.5682, "TAV30_mae": 0.6771, "seconds": 10.7, "best": false}
+{"start": "robust_rec_seed44", "device": "cpu", "parameters": 4501074}
+{"run": "robust_rec_seed44", "epoch": 1, "loss": 1.1002, "score": 1.3354, "clean_mae": 0.7313, "clean_f1": 0.4056, "TAV30_mae": 0.7301, "seconds": 11.8, "best": true}
+{"run": "robust_rec_seed44", "epoch": 2, "loss": 0.9816, "score": 1.2703, "clean_mae": 0.7102, "clean_f1": 0.4648, "TAV30_mae": 0.7255, "seconds": 11.8, "best": true}
+{"run": "robust_rec_seed44", "epoch": 3, "loss": 0.9074, "score": 1.2365, "clean_mae": 0.7002, "clean_f1": 0.47, "TAV30_mae": 0.713, "seconds": 13.8, "best": true}
+{"run": "robust_rec_seed44", "epoch": 4, "loss": 0.8375, "score": 1.0796, "clean_mae": 0.6325, "clean_f1": 0.5664, "TAV30_mae": 0.6572, "seconds": 12.1, "best": true}
+{"run": "robust_rec_seed44", "epoch": 5, "loss": 0.7889, "score": 1.0814, "clean_mae": 0.6424, "clean_f1": 0.5791, "TAV30_mae": 0.6587, "seconds": 12.4, "best": false}
+{"run": "robust_rec_seed44", "epoch": 6, "loss": 0.7419, "score": 1.08, "clean_mae": 0.6358, "clean_f1": 0.5683, "TAV30_mae": 0.6529, "seconds": 12.0, "best": false}
+{"run": "robust_rec_seed44", "epoch": 7, "loss": 0.7141, "score": 1.1637, "clean_mae": 0.6971, "clean_f1": 0.5479, "TAV30_mae": 0.7014, "seconds": 11.9, "best": false}
+{"run": "robust_rec_seed44", "epoch": 8, "loss": 0.6603, "score": 1.1216, "clean_mae": 0.6647, "clean_f1": 0.5483, "TAV30_mae": 0.6772, "seconds": 12.5, "best": false}
+{"run": "robust_rec_seed44", "epoch": 9, "loss": 0.6154, "score": 1.1184, "clean_mae": 0.6623, "clean_f1": 0.565, "TAV30_mae": 0.6792, "seconds": 12.2, "best": false}
+{"start": "text_only_seed44", "device": "cpu", "parameters": 4501074}
+{"run": "text_only_seed44", "epoch": 1, "loss": 1.0652, "score": 1.3005, "clean_mae": 0.7057, "clean_f1": 0.4278, "TAV30_mae": 0.7279, "seconds": 10.8, "best": true}
+{"run": "text_only_seed44", "epoch": 2, "loss": 0.9282, "score": 1.26, "clean_mae": 0.7117, "clean_f1": 0.4421, "TAV30_mae": 0.7025, "seconds": 10.7, "best": true}
+{"run": "text_only_seed44", "epoch": 3, "loss": 0.8374, "score": 1.1698, "clean_mae": 0.6709, "clean_f1": 0.5131, "TAV30_mae": 0.6834, "seconds": 11.6, "best": true}
+{"run": "text_only_seed44", "epoch": 4, "loss": 0.7432, "score": 1.1268, "clean_mae": 0.6801, "clean_f1": 0.5598, "TAV30_mae": 0.6744, "seconds": 10.8, "best": true}
+{"run": "text_only_seed44", "epoch": 5, "loss": 0.6893, "score": 1.0983, "clean_mae": 0.6416, "clean_f1": 0.5595, "TAV30_mae": 0.6541, "seconds": 10.4, "best": true}
+{"run": "text_only_seed44", "epoch": 6, "loss": 0.6425, "score": 1.0915, "clean_mae": 0.6489, "clean_f1": 0.5715, "TAV30_mae": 0.6523, "seconds": 10.3, "best": true}
+{"run": "text_only_seed44", "epoch": 7, "loss": 0.5942, "score": 1.1256, "clean_mae": 0.67, "clean_f1": 0.5673, "TAV30_mae": 0.6739, "seconds": 10.4, "best": false}
+{"run": "text_only_seed44", "epoch": 8, "loss": 0.527, "score": 1.1536, "clean_mae": 0.6827, "clean_f1": 0.5507, "TAV30_mae": 0.69, "seconds": 10.7, "best": false}
+{"run": "text_only_seed44", "epoch": 9, "loss": 0.4847, "score": 1.1636, "clean_mae": 0.6944, "clean_f1": 0.5447, "TAV30_mae": 0.699, "seconds": 10.4, "best": false}
+{"run": "text_only_seed44", "epoch": 10, "loss": 0.4668, "score": 1.1661, "clean_mae": 0.7059, "clean_f1": 0.5533, "TAV30_mae": 0.7043, "seconds": 10.6, "best": false}
+{"run": "text_only_seed44", "epoch": 11, "loss": 0.4354, "score": 1.1617, "clean_mae": 0.6983, "clean_f1": 0.5488, "TAV30_mae": 0.697, "seconds": 10.5, "best": false}
+{"start": "robust_nogate_seed44", "device": "cpu", "parameters": 4501074}
+{"run": "robust_nogate_seed44", "epoch": 1, "loss": 1.0965, "score": 1.3022, "clean_mae": 0.7122, "clean_f1": 0.4236, "TAV30_mae": 0.7165, "seconds": 11.7, "best": true}
+{"run": "robust_nogate_seed44", "epoch": 2, "loss": 0.9769, "score": 1.2659, "clean_mae": 0.7114, "clean_f1": 0.4529, "TAV30_mae": 0.7252, "seconds": 11.8, "best": true}
+{"run": "robust_nogate_seed44", "epoch": 3, "loss": 0.9065, "score": 1.2158, "clean_mae": 0.6889, "clean_f1": 0.48, "TAV30_mae": 0.7039, "seconds": 12.0, "best": true}
+{"run": "robust_nogate_seed44", "epoch": 4, "loss": 0.8406, "score": 1.1027, "clean_mae": 0.6516, "clean_f1": 0.5661, "TAV30_mae": 0.6646, "seconds": 12.1, "best": true}
+{"run": "robust_nogate_seed44", "epoch": 5, "loss": 0.7923, "score": 1.1039, "clean_mae": 0.6521, "clean_f1": 0.5641, "TAV30_mae": 0.6622, "seconds": 12.6, "best": false}
+{"run": "robust_nogate_seed44", "epoch": 6, "loss": 0.7411, "score": 1.0913, "clean_mae": 0.6407, "clean_f1": 0.5661, "TAV30_mae": 0.6576, "seconds": 12.6, "best": true}
+{"run": "robust_nogate_seed44", "epoch": 7, "loss": 0.7222, "score": 1.1604, "clean_mae": 0.6881, "clean_f1": 0.5316, "TAV30_mae": 0.6858, "seconds": 13.3, "best": false}
+{"run": "robust_nogate_seed44", "epoch": 8, "loss": 0.6685, "score": 1.102, "clean_mae": 0.6428, "clean_f1": 0.5561, "TAV30_mae": 0.6604, "seconds": 12.6, "best": false}
+{"run": "robust_nogate_seed44", "epoch": 9, "loss": 0.6261, "score": 1.13, "clean_mae": 0.6761, "clean_f1": 0.5684, "TAV30_mae": 0.6926, "seconds": 13.0, "best": false}
+{"run": "robust_nogate_seed44", "epoch": 10, "loss": 0.6127, "score": 1.1414, "clean_mae": 0.6822, "clean_f1": 0.5437, "TAV30_mae": 0.6881, "seconds": 12.8, "best": false}
+{"run": "robust_nogate_seed44", "epoch": 11, "loss": 0.5982, "score": 1.1109, "clean_mae": 0.6519, "clean_f1": 0.5547, "TAV30_mae": 0.6646, "seconds": 13.4, "best": false}

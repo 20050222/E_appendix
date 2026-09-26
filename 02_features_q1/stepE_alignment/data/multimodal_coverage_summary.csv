@@ -1,0 +1,4 @@
+﻿modality,valid_observations,possible_observations,coverage,samples_with_any_valid_bin,samples_with_all_50_bins,valid_bins_min,valid_bins_median,valid_bins_mean,valid_bins_max
+text,2259,5000,0.4518,100,6,5,21.0,22.59,50
+audio,4957,5000,0.9914,100,63,47,50.0,49.57,50
+vision,3865,5000,0.773,90,47,0,49.0,38.65,50

@@ -1,0 +1,35 @@
+{
+  "checkpoint": "04_robust_model\\question2\\artifacts\\final_model.pt",
+  "checkpoint_sha256": "af87eff66f6a76d36530807c0b65d3063fe280b89e12682700e2e9c1ce134315",
+  "split": "附件2 valid",
+  "sample_count_evaluated": 728,
+  "top_k": 3,
+  "candidate_protocols": [
+    {
+      "window_ratio": 0.1,
+      "classification_gap": 0.06992077188730476,
+      "regression_gap": 0.1276836194614146,
+      "combined_gap": 0.19760439134871938,
+      "records": 2184
+    },
+    {
+      "window_ratio": 0.2,
+      "classification_gap": 0.05428245080142621,
+      "regression_gap": 0.09813972779024215,
+      "combined_gap": 0.15242217859166834,
+      "records": 2184
+    },
+    {
+      "window_ratio": 0.3,
+      "classification_gap": 0.04010064592571952,
+      "regression_gap": 0.07194108911867224,
+      "combined_gap": 0.11204173504439176,
+      "records": 2184
+    }
+  ],
+  "selected_window_ratio": 0.1,
+  "selected_window_size": 5,
+  "selection_rule": "maximize mean classification faithfulness gap + mean regression faithfulness gap against equal-count random windows",
+  "status": "validated_on_attachment2_full_valid",
+  "model_variant": "robust_norec"
+}

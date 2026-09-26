@@ -1,0 +1,128 @@
+{
+  "path_found": true,
+  "sample_count": 4850,
+  "splits": {
+    "train": {
+      "sample_count": 3395,
+      "shapes": {
+        "text": [
+          3395,
+          50,
+          768
+        ],
+        "audio": [
+          3395,
+          50,
+          74
+        ],
+        "vision": [
+          3395,
+          50,
+          35
+        ]
+      },
+      "expected_shapes": {
+        "text": [
+          3395,
+          50,
+          768
+        ],
+        "audio": [
+          3395,
+          50,
+          74
+        ],
+        "vision": [
+          3395,
+          50,
+          35
+        ]
+      }
+    },
+    "valid": {
+      "sample_count": 728,
+      "shapes": {
+        "text": [
+          728,
+          50,
+          768
+        ],
+        "audio": [
+          728,
+          50,
+          74
+        ],
+        "vision": [
+          728,
+          50,
+          35
+        ]
+      },
+      "expected_shapes": {
+        "text": [
+          728,
+          50,
+          768
+        ],
+        "audio": [
+          728,
+          50,
+          74
+        ],
+        "vision": [
+          728,
+          50,
+          35
+        ]
+      }
+    },
+    "test": {
+      "sample_count": 727,
+      "shapes": {
+        "text": [
+          727,
+          50,
+          768
+        ],
+        "audio": [
+          727,
+          50,
+          74
+        ],
+        "vision": [
+          727,
+          50,
+          35
+        ]
+      },
+      "expected_shapes": {
+        "text": [
+          727,
+          50,
+          768
+        ],
+        "audio": [
+          727,
+          50,
+          74
+        ],
+        "vision": [
+          727,
+          50,
+          35
+        ]
+      }
+    }
+  },
+  "interface_match": true,
+  "id_intersection_with_attachment1": 18,
+  "common_classification_label_mismatch_count": 0,
+  "common_regression_label_mismatch_count": 0,
+  "official_classification_values_on_common_ids": [
+    "0.0",
+    "1.0",
+    "2.0"
+  ],
+  "comparison_scope": "shape/field interface and labels on shared IDs; feature values are not compared across sources",
+  "path": "E:\\myProject\\postgraduate\\Coding\\CPMCM\\E_workspace\\00_raw_readonly\\E题数据\\附件2-数据集特征文件\\aligned_50.pkl"
+}

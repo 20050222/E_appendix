@@ -1,0 +1,96 @@
+{
+  "generated_at_utc": "2026-09-24T05:45:31.419143+00:00",
+  "workspace": "E:\\myProject\\postgraduate\\Coding\\CPMCM\\E_workspace",
+  "sample_count": 100,
+  "random_seed": 42,
+  "config": {
+    "path": "02_features_q1\\stepG_repro\\data\\processing_config.yaml",
+    "sha256": "61cba17b32b74af2c29229b769b5c60cc1a173635a61c62ce750195bd73de780"
+  },
+  "environment_files": [
+    "01_manifest/env/environment_cpu.yaml",
+    "01_manifest/env/environment_cuda4090.yaml"
+  ],
+  "run_metadata": {
+    "text": {
+      "model_name": "bert-base-uncased",
+      "model_source": "bert-base-uncased",
+      "device": "cpu",
+      "python": "3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:27:10) [MSC v.1938 64 bit (AMD64)]",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "torch_version": "2.6.0+cpu",
+      "transformers_version": "4.49.0",
+      "hidden_size": 768,
+      "max_length": 256,
+      "time_bins": 50,
+      "random_seed": 42,
+      "alignment_method": "uniform_tokens",
+      "model_commit_hash": "86b5e0934494bd15c9632b12f734a8a67f723594",
+      "tokenizer_class": "BertTokenizerFast",
+      "tokenizer_name_or_path": "bert-base-uncased",
+      "cuda_version": null,
+      "cudnn_version": null,
+      "gpu_name": null,
+      "cublas_workspace_config": null,
+      "deterministic_algorithms": true,
+      "raw_index": "stepA_index/data/sample_index.csv"
+    },
+    "audio": {
+      "python": "3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:27:10) [MSC v.1938 64 bit (AMD64)]",
+      "librosa": "0.10.2.post1",
+      "numpy": "1.26.4",
+      "ffmpeg": "D:\\develop\\Anaconda3\\envs\\cpmcm-e-cpu\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+      "ffmpeg_version": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+      "elapsed_sec": 53.883662939071655,
+      "sample_count": 100,
+      "feature_schema": "audio74_v1"
+    },
+    "vision": {
+      "python": "3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:27:10) [MSC v.1938 64 bit (AMD64)]",
+      "opencv": "4.11.0",
+      "mediapipe": "0.10.21",
+      "numpy": "1.26.4",
+      "elapsed_sec": 159.8095588684082,
+      "sample_count": 100,
+      "feature_schema": "face35_v1"
+    }
+  },
+  "tracked_input_and_result_sha256": {
+    "01_manifest\\csv_output\\file_manifest.csv": "7cf52b9f6ee73af340d5d451b7d309c37a8975d9f95040760f77f563a8c65485",
+    "02_features_q1\\stepA_index\\data\\sample_index.csv": "cbfcc56b26e330d8114781ecf4cd24d34b578f7076437a0aa916098469a63d55",
+    "02_features_q1\\stepB_text\\data\\text_feature_run.json": "3b75f7ac7cbe275dd1c3b00b55e23e5a12b9432209e004148d61c4b6380c32d7",
+    "02_features_q1\\stepC_audio\\data\\audio_feature_run.json": "5f1c95e82901e47e17be526ea751555582c6467e31b4606886d323e5c12b32ad",
+    "02_features_q1\\stepD_vision\\data\\vision_feature_run.json": "69d4189032b5d5ed7bd4d0b97391d8893e5b5f01337f81b2846fe553ae7dc7d1",
+    "02_features_q1\\stepE_alignment\\data\\aligned_50_schema.json": "87b4d185aa15758632e1b7387a4c4b18faca778f6dcac632c1db45fc45c37ac5",
+    "02_features_q1\\stepF_validation\\data\\final_sample_validation.csv": "0bc3151ab9cb352fa8e6b37b02a1386121d853e30fc2f7f1791c8137c1360f8e"
+  },
+  "code_sha256": {
+    "02_features_q1\\stepA_index\\code\\build_sample_index.py": "1262b0f9768ab21221a03c73e9fc130263efebd7326e5390260121abb8a9178a",
+    "02_features_q1\\stepB_text\\code\\extract_text_features.py": "627392b14cc321a9d12405205880d6ba59c4659861b588949025bdce5ede8344",
+    "02_features_q1\\stepB_text\\code\\plot_text_qc.py": "9d9eb41377b61ab38e4ec945a0a8aa8a91b94604dd3b36d5326064dbf26ffd3a",
+    "02_features_q1\\stepB_text\\code\\prepare_text_inputs.py": "fa4ba3fece449f42620a20d9d82e17846e2bfa75b4d53885fbfecfce8cb93f58",
+    "02_features_q1\\stepB_text\\code\\recover_text_csvs.py": "ba2cf1c62e1a42d3d9e676712b076ab1d7b8bb2d51e20391c5f5380025ca88a4",
+    "02_features_q1\\stepB_text\\code\\text_feature_common.py": "a35e7043cc66864c2152045d1f7eb4ee401704d3d82f9fb246dcc4eaec058947",
+    "02_features_q1\\stepB_text\\code\\validate_text_features.py": "e5df7fcf950056a78f3ca31d614481994022f67cb22289557019f5cd26ee20c7",
+    "02_features_q1\\stepC_audio\\code\\extract_audio_features.py": "d9fa55b3d0e9c8654020b6122e8116894017164d9edee61846f44af801c823d6",
+    "02_features_q1\\stepD_vision\\code\\extract_vision_features.py": "5d0c84fb7e42687edf0a6861fd35b7ce52206e6861f62e34f803cdf3df4a9c8f",
+    "02_features_q1\\stepE_alignment\\code\\build_aligned50.py": "8c932669aedde748757d79650d0871c68c3c35a5d105136fb0208e934d96651e",
+    "02_features_q1\\stepE_alignment\\code\\plot_multimodal_publication.py": "f34da1fc785947e87267622da46b27cd87640bdb79516548a308075945469602",
+    "02_features_q1\\stepE_alignment\\code\\plot_multimodal_publication_chinese.py": "f10d43ccdc8efd79b12fc80ea04b3e0d172f7eaef693248dd03dc0caed1ed4ef",
+    "02_features_q1\\stepE_alignment\\code\\plot_multimodal_qc.py": "3a7482492e5725ba4f33c4f929f05aa1997172ffa18ec922fadd9bcfe7c2e55e",
+    "02_features_q1\\stepE_alignment\\code\\validate_aligned50.py": "fadc141e61ba84f90b9c53a082b7c005392f198c6c37662a8b6948fdd6749219",
+    "02_features_q1\\stepF_validation\\code\\plot_fg_publication.py": "d4f62a311e8ad1639627ad4293bf4dbb0831cd9ecffccfb9b394898ea2597096",
+    "02_features_q1\\stepF_validation\\code\\run_final_validation.py": "e726047a1e8cca44b4ad20f87f1636114eea9a51944759232692d65ab28a23e8",
+    "02_features_q1\\stepG_repro\\code\\build_repro_manifest.py": "56eb100a2b71ddce027a32f0dfdd8550499c8f52eb99ddee269c6ee66f262caf"
+  },
+  "rerun_order": [
+    "Step A sample index",
+    "Step B text features",
+    "Step C audio features",
+    "Step D vision features",
+    "Step E aligned-50 merge",
+    "Step F validation and traceability",
+    "Step G manifest generation"
+  ],
+  "integrity_scope": "hashes identify the recorded inputs, schemas, logs and scripts; raw videos remain in 00_raw_readonly"
+}

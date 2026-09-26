@@ -1,0 +1,16 @@
+{
+  "python": "3.12.14",
+  "platform": "Darwin arm64",
+  "torch": "2.14.0",
+  "transformers": "4.44.2",
+  "numpy": "2.5.3",
+  "sklearn": "1.9.1",
+  "device": "cpu",
+  "training_threads": {
+    "42": 2,
+    "43": 2,
+    "44": 2
+  },
+  "pretrained_repository": "google/bert_uncased_L-2_H-128_A-2",
+  "protocol": "q2-v2"
+}

@@ -1,0 +1,147 @@
+{
+  "root": "E:\\myProject\\postgraduate\\Coding\\CPMCM\\E_workspace\\00_raw_readonly\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件",
+  "versions": {
+    "对齐版本": {
+      "pkl_count": 20,
+      "video_count": 20,
+      "expected_shapes": {
+        "audio": [
+          50,
+          74
+        ],
+        "vision": [
+          50,
+          35
+        ],
+        "text": [
+          50,
+          768
+        ],
+        "text_bert": [
+          3,
+          50
+        ]
+      },
+      "fields_seen": {
+        "raw_text": {
+          "python_type": "str_",
+          "shape": [],
+          "dtype": ""
+        },
+        "audio": {
+          "python_type": "ndarray",
+          "shape": [
+            50,
+            74
+          ],
+          "dtype": "float64"
+        },
+        "vision": {
+          "python_type": "ndarray",
+          "shape": [
+            50,
+            35
+          ],
+          "dtype": "float64"
+        },
+        "id": {
+          "python_type": "str",
+          "shape": [],
+          "dtype": ""
+        },
+        "text": {
+          "python_type": "ndarray",
+          "shape": [
+            50,
+            768
+          ],
+          "dtype": "float32"
+        },
+        "text_bert": {
+          "python_type": "ndarray",
+          "shape": [
+            3,
+            50
+          ],
+          "dtype": "int64"
+        }
+      }
+    },
+    "未对齐版本": {
+      "pkl_count": 20,
+      "video_count": 20,
+      "expected_shapes": {
+        "audio": [
+          500,
+          74
+        ],
+        "vision": [
+          500,
+          35
+        ],
+        "text": [
+          50,
+          768
+        ],
+        "text_bert": [
+          3,
+          50
+        ]
+      },
+      "fields_seen": {
+        "raw_text": {
+          "python_type": "str_",
+          "shape": [],
+          "dtype": ""
+        },
+        "audio": {
+          "python_type": "ndarray",
+          "shape": [
+            500,
+            74
+          ],
+          "dtype": "float64"
+        },
+        "vision": {
+          "python_type": "ndarray",
+          "shape": [
+            500,
+            35
+          ],
+          "dtype": "float64"
+        },
+        "id": {
+          "python_type": "str",
+          "shape": [],
+          "dtype": ""
+        },
+        "text": {
+          "python_type": "ndarray",
+          "shape": [
+            50,
+            768
+          ],
+          "dtype": "float32"
+        },
+        "text_bert": {
+          "python_type": "ndarray",
+          "shape": [
+            3,
+            50
+          ],
+          "dtype": "int64"
+        },
+        "audio_lengths": {
+          "python_type": "int",
+          "shape": [],
+          "dtype": ""
+        },
+        "vision_lengths": {
+          "python_type": "int",
+          "shape": [],
+          "dtype": ""
+        }
+      }
+    }
+  }
+}

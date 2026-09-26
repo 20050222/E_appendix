@@ -1,0 +1,37 @@
+{
+  "schema": "aligned_50_multimodal_v1",
+  "sample_id_rule": "video_id + '_' + clip_id",
+  "time_bins": 50,
+  "interval": "per-video equal-duration bins [kD/50,(k+1)D/50)",
+  "modalities": {
+    "text": {
+      "shape": [
+        50,
+        768
+      ],
+      "source": "Step B BERT",
+      "alignment": "uniform token index; not actual timestamp"
+    },
+    "audio": {
+      "shape": [
+        50,
+        74
+      ],
+      "source": "Step C audio74_v1",
+      "alignment": "frame centers aggregated into video-time bins"
+    },
+    "vision": {
+      "shape": [
+        50,
+        35
+      ],
+      "source": "Step D face35_v1",
+      "alignment": "sampled frames aggregated into video-time bins"
+    }
+  },
+  "masks": "1 means a valid modality observation in the bin; 0 means unavailable or extraction failed, consult sample audit",
+  "labels": {
+    "classification_label": "annotation",
+    "regression_label": "label"
+  }
+}

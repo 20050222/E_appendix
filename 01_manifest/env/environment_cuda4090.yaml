@@ -1,0 +1,27 @@
+# E题：NVIDIA GeForce RTX 4090 环境
+# 使用 PyTorch 2.6.0 的 CUDA 12.6 wheel；本机驱动报告 CUDA API 13.2。
+name: cpmcm-e-rtx4090
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11.9
+  - numpy=1.26.4
+  - pandas=2.2.3
+  - pip
+  - pip:
+      - transformers==4.49.0
+      - librosa==0.10.2.post1
+      - opencv-contrib-python==4.11.0.86
+      - mediapipe==0.10.21
+      - imageio-ffmpeg==0.6.0
+      - matplotlib==3.9.4
+      - openpyxl==3.1.5
+      - --extra-index-url https://download.pytorch.org/whl/cu126
+      - torch==2.6.0
+
+# 安装后验证：
+# python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.get_device_name(0)); assert torch.cuda.is_available()"
+# 运行设备：cuda:0
+# 随机种子：42
+# 硬件记录：RTX 4090，24564 MiB；Driver 595.91.07；驱动 CUDA API 13.2

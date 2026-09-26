@@ -1,0 +1,4 @@
+﻿"modality","expected_shape","dtype_set","valid_bins","possible_bins","coverage_pct","finite_value_pct","mask_invalid_sample_count","zero_rows_total","zero_rows_when_mask1","adjacent_sample_mean_l2_mean","adjacent_sample_mean_l2_median"
+"text","(50, 768)","float32","2259","5000","45.18","100.0","0","2741","0","14.222946684701101","14.034485816955566"
+"audio","(50, 74)","float32","4957","5000","99.14","100.0","0","43","0","1234.0675442504883","1274.8173217773438"
+"vision","(50, 35)","float32","3865","5000","77.3","100.0","0","1135","0","0.10113359507257966","0.08122396096587181"

@@ -1,0 +1,70 @@
+{
+  "version": "q2-v2",
+  "frozen_utc": "2026-09-24T06:06:42.603692+00:00",
+  "iteration_note": "Audit repair iteration. V1 test results have already been observed; V2 test is a reused holdout, not a new blind test. No hyperparameter or architecture search based on test outcomes.",
+  "variants": {
+    "text_only": {
+      "text_only": true,
+      "gating": false,
+      "mask_aware": true,
+      "augment": false,
+      "rec_weight": 0.0
+    },
+    "fusion_clean": {
+      "gating": false,
+      "mask_aware": false,
+      "augment": false,
+      "rec_weight": 0.0
+    },
+    "fusion_aug": {
+      "gating": false,
+      "mask_aware": false,
+      "augment": true,
+      "rec_weight": 0.0
+    },
+    "robust_norec": {
+      "gating": true,
+      "mask_aware": true,
+      "augment": true,
+      "rec_weight": 0.0
+    },
+    "robust_rec": {
+      "gating": true,
+      "mask_aware": true,
+      "augment": true,
+      "rec_weight": 0.05
+    },
+    "robust_nogate": {
+      "gating": false,
+      "mask_aware": true,
+      "augment": true,
+      "rec_weight": 0.05
+    }
+  },
+  "training_seeds": [
+    42,
+    43,
+    44
+  ],
+  "mask_seeds": [
+    20260924,
+    20260925,
+    20260926
+  ],
+  "checkpoint_selection": "mean projected MAE+1-MacroF1 on valid clean/T30/A30/V30/TAV30, fixed mask seed 20260924",
+  "variant_selection": "minimum mean best checkpoint validation score over seeds 42,43,44; deliver fixed seed42",
+  "output_rule": "argmax polarity; Neutral->0; Negative->min(raw,-1e-6); Positive->max(raw,1e-6)",
+  "fingerprint": {
+    "src/data.py": "54af3f8859264ecce779120cc5462e855c5db5360af2d6949465bb97da79b459",
+    "src/model.py": "3b34374813fbca8ac5636070bfa6e4e4c0c7b8267a6afeacfbc7f0801b9eab68",
+    "src/train.py": "7edea5e349a5d483743a08b8680f626cb7779ce1524de37016a3efb533422fa2",
+    "src/protocol.py": "7788c736e18285459c3060f5ae9fccf7e51ab42e52b715b56d569a3d519d605c",
+    "src/tfr_generator.py": "45451da08b3c68d2a22f02a6bcea1217f5dae727b1048a88739eb79e371ae0f3",
+    "artifacts/train.npz": "3f83731fc291b2b06c3d15b6414bce9072a761146739e578fcae54e9fadfb9ee",
+    "artifacts/valid.npz": "cd27bac824903b112a95c300b3b993d40be7f8d0bc192daa76b0d91e0c0507fa",
+    "artifacts/normalization.npz": "5a805d48355fa3ecc7365b9a82f69fe230ec6cb637264339c216d4d9a98cd280",
+    "pretrained/bert-tiny/model.safetensors": "7fb69ad9f6866d8983183c930e33828f326470bf6ad8bbb2ad4ed957a92e9414",
+    "pretrained/bert-tiny/config.json": "508e1f01aae55d73355cbdd82609be2f43ba5a0d3428837adbe56cf8391f8b39"
+  },
+  "evaluation_plan": "Core clean/T/A/V/TAV30 over 3 mask seeds for every model; detailed 7 combinations x 4 rates, positions and strict patterns on valid for selected model and fusion_clean; paired degradation reports on valid/test; no model changes from test evaluation."
+}

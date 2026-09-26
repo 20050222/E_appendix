@@ -1,0 +1,16 @@
+OFFLINE INFERENCE
+Wrote 30 predictions to /var/folders/th/vdjhkzhj3yb1wjtc0wmshxr00000gn/T/q2-v2-fresh-bcszlsug/fresh_predictions.csv
+
+FRESH TRAINING
+{"start": "robust_rec_seed42", "device": "cpu", "parameters": 4501074}
+{"run": "robust_rec_seed42", "epoch": 1, "loss": 1.1027, "score": 1.4575, "clean_mae": 0.7795, "clean_f1": 0.3401, "TAV30_mae": 0.7857, "seconds": 6.3, "best": true}
+
+VERIFIED SKIP
+SKIP robust_rec_seed42
+
+MISSING CHECKPOINT REPAIR
+{"start": "robust_rec_seed42", "device": "cpu", "parameters": 4501074}
+{"run": "robust_rec_seed42", "epoch": 1, "loss": 1.1027, "score": 1.4575, "clean_mae": 0.7795, "clean_f1": 0.3401, "TAV30_mae": 0.7857, "seconds": 6.2, "best": true}
+
+CHECKPOINT RELOAD AND VALIDATION
+{"validation_recalculated": true, "n": 728, "score": 1.4574716687402056}

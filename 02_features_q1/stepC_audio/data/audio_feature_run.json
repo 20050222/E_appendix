@@ -1,0 +1,10 @@
+{
+  "python": "3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:27:10) [MSC v.1938 64 bit (AMD64)]",
+  "librosa": "0.10.2.post1",
+  "numpy": "1.26.4",
+  "ffmpeg": "D:\\develop\\Anaconda3\\envs\\cpmcm-e-cpu\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+  "ffmpeg_version": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+  "elapsed_sec": 53.883662939071655,
+  "sample_count": 100,
+  "feature_schema": "audio74_v1"
+}

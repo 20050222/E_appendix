@@ -1,0 +1,13 @@
+test_block_only_in_content_and_deterministic (test_invariants.Invariants.test_block_only_in_content_and_deterministic) ... ok
+test_missing_tokens_and_features_do_not_leak (test_invariants.Invariants.test_missing_tokens_and_features_do_not_leak) ... ok
+test_output_polarity_consistency (test_invariants.Invariants.test_output_polarity_consistency) ... ok
+test_padding_and_special_tokens_are_not_missing_content (test_invariants.Invariants.test_padding_and_special_tokens_are_not_missing_content) ... ok
+test_completion_requires_matching_usable_checkpoint (test_repairs.Repairs.test_completion_requires_matching_usable_checkpoint) ... ok
+test_masks_pair_across_modalities_subset_and_order (test_repairs.Repairs.test_masks_pair_across_modalities_subset_and_order) ... ok
+test_selection_uses_delivered_projection (test_repairs.Repairs.test_selection_uses_delivered_projection) ... ok
+test_strict_two_blocks_and_short_population (test_repairs.Repairs.test_strict_two_blocks_and_short_population) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.955s
+
+OK

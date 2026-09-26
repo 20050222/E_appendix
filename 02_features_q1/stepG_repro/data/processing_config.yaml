@@ -1,0 +1,59 @@
+schema_version: 1
+project: CPMCM-E-question-1
+feature_version: aligned_50_multimodal_v1
+num_time_bins: 50
+random_seed: 42
+input:
+  source: 00_raw_readonly/E题数据/附件1-数据集原始多模态样本
+  label_source: label-100.xlsx / label
+  sample_id_rule: str(video_id).strip() + '_' + str(clip_id).strip()
+  raw_data_policy: read_only
+text:
+  source: label-100.xlsx.text
+  normalization: Unicode NFC, trim, collapse consecutive whitespace
+  encoder: bert-base-uncased
+  tokenizer: BertTokenizerFast
+  hidden_size: 768
+  max_length: 256
+  time_bins: 50
+  alignment: uniform_tokens
+  timestamp_semantics: not_a_video_timestamp
+  empty_bin_value: 0.0
+audio:
+  decoder: FFmpeg via imageio-ffmpeg
+  sample_rate_hz: 16000
+  channels: 1
+  sample_format: float32
+  frame_ms: 25
+  hop_ms: 10
+  feature_schema: audio74_v1
+  feature_dim: 74
+  time_bins: 50
+  aggregation: mean_by_frame_center
+  interval: left_closed_right_open
+  alignment: per_video_equal_duration_bins
+  empty_bin_value: 0.0
+vision:
+  decoder: OpenCV
+  sampler_fps: 10.0
+  detector: MediaPipe Face Mesh
+  max_faces: 4
+  subject_rule: largest_landmark_bbox_per_sampled_frame
+  timestamp_source: frame_index_divided_by_fps_fallback
+  feature_schema: face35_v1
+  feature_dim: 35
+  time_bins: 50
+  aggregation: mean_valid_face_frames
+  interval: left_closed_right_open
+  alignment: per_video_equal_duration_bins
+  empty_bin_value: 0.0
+alignment:
+  interface: aligned_50
+  bin_rule: I_t = [tD/50, (t+1)D/50)
+  masks: 1_valid_observation_0_unavailable_or_failed
+  text_and_video_time_warning: text bins are sequence positions, audio/vision bins are video-relative time
+outputs:
+  per_sample: stepE_alignment/data/aligned_50/{sample_id}.npz
+  sample_audit: stepE_alignment/data/multimodal_sample_audit.csv
+  alignment_log: stepE_alignment/data/multimodal_alignment_log.csv
+  validation: stepF_validation/data/final_sample_validation.csv

@@ -1,0 +1,135 @@
+{
+  "protocol": "q2-v2",
+  "cross_condition_pairing": [
+    {
+      "mask_seed": 20260924,
+      "modality": 0,
+      "n": 728,
+      "mismatched": 0
+    },
+    {
+      "mask_seed": 20260924,
+      "modality": 1,
+      "n": 728,
+      "mismatched": 0
+    },
+    {
+      "mask_seed": 20260924,
+      "modality": 2,
+      "n": 728,
+      "mismatched": 0
+    },
+    {
+      "mask_seed": 20260925,
+      "modality": 0,
+      "n": 728,
+      "mismatched": 0
+    },
+    {
+      "mask_seed": 20260925,
+      "modality": 1,
+      "n": 728,
+      "mismatched": 0
+    },
+    {
+      "mask_seed": 20260925,
+      "modality": 2,
+      "n": 728,
+      "mismatched": 0
+    },
+    {
+      "mask_seed": 20260926,
+      "modality": 0,
+      "n": 728,
+      "mismatched": 0
+    },
+    {
+      "mask_seed": 20260926,
+      "modality": 1,
+      "n": 728,
+      "mismatched": 0
+    },
+    {
+      "mask_seed": 20260926,
+      "modality": 2,
+      "n": 728,
+      "mismatched": 0
+    }
+  ],
+  "strict_two_blocks": [
+    {
+      "mask_seed": 20260924,
+      "eligible": 718,
+      "excluded": 10,
+      "modality_sequences": 2154,
+      "all_exactly_two": true
+    },
+    {
+      "mask_seed": 20260925,
+      "eligible": 718,
+      "excluded": 10,
+      "modality_sequences": 2154,
+      "all_exactly_two": true
+    },
+    {
+      "mask_seed": 20260926,
+      "eligible": 718,
+      "excluded": 10,
+      "modality_sequences": 2154,
+      "all_exactly_two": true
+    }
+  ],
+  "selection": {
+    "n_retrained": 18,
+    "max_score_recalculation_error": 3.576278673200761e-08,
+    "scores": {
+      "fusion_aug": 1.0937715417783727,
+      "fusion_clean": 1.094215579425857,
+      "robust_nogate": 1.0928945706284818,
+      "robust_norec": 1.0854873646113383,
+      "robust_rec": 1.0856832687515818,
+      "text_only": 1.1057463829769587
+    },
+    "selected_variant": "robust_norec",
+    "selected_seed": 42,
+    "all_epoch_selections_replayed": true
+  },
+  "pattern_population": {
+    "n": 718,
+    "excluded": 10,
+    "sha256": "bbcc1ce77f89ecc3dd04539f22327053e878ea0d0bd9a4973b6e7f54756c15de",
+    "all_patterns_identical_population": true
+  },
+  "degradation": {
+    "paired_rows": 432,
+    "baseline_contrast_rows": 360,
+    "recalculation_pass": true
+  },
+  "prediction_recalculation": {
+    "metric_errors": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "mae": 0.0,
+      "pearson": 0.0
+    },
+    "final_model_sha256": "af87eff66f6a76d36530807c0b65d3063fe280b89e12682700e2e9c1ce134315"
+  },
+  "special_predictions": {
+    "rows": 30,
+    "finite_in_range": true,
+    "polarity_consistency": true
+  },
+  "fresh_archive": {
+    "no_active_run_markers_in_zip": true,
+    "manifest_pass": true,
+    "offline_inference_byte_identical": true,
+    "fresh_training_train_n": 3395,
+    "fresh_training_valid_n": 728,
+    "fresh_training_epochs": 1,
+    "valid_complete_run_skipped": true,
+    "missing_checkpoint_automatically_retrained": true,
+    "retraining_checkpoint_hash_identical": true,
+    "reloaded_checkpoint_validation_pass": true,
+    "scope": "18 full retrainings in main workspace; clean-unzip integration uses one full-data epoch, not 18 repeated full trainings; local pinned dependencies reused, no clean OS installation."
+  }
+}

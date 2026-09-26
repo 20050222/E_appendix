@@ -1,0 +1,18 @@
+{
+  "checkpoint": "04_robust_model\\question2\\artifacts\\final_model.pt",
+  "checkpoint_sha256": "af87eff66f6a76d36530807c0b65d3063fe280b89e12682700e2e9c1ce134315",
+  "normalization": "04_robust_model\\question2\\artifacts\\normalization.npz",
+  "normalization_sha256": "5a805d48355fa3ecc7365b9a82f69fe230ec6cb637264339c216d4d9a98cd280",
+  "q2_source": "04_robust_model\\question2\\src",
+  "attachment4_aligned_dir": "00_raw_readonly\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本",
+  "sample_count": 20,
+  "window_ratio": 0.1,
+  "window_size": 5,
+  "stride_ratio": 0.04,
+  "stride": 2,
+  "top_k": 3,
+  "device": "cpu",
+  "status": "attachment4_inference_completed_with_full_validated_explanation_protocol",
+  "protocol": "05_explainable_model\\data\\q3_explanation_protocol.json",
+  "protocol_sha256": "2434670cf361492bcfed088a051fc37e2c304a8dd961d4b8e31e4185703aeb12"
+}

@@ -1,0 +1,93 @@
+{
+  "source": "E题数据/附件2-数据集特征文件/aligned_50.pkl",
+  "splits": {
+    "train": {
+      "n": 3395,
+      "class_counts": [
+        967,
+        758,
+        1670
+      ],
+      "content_length_quantiles": [
+        1.0,
+        14.0,
+        20.0,
+        30.0,
+        48.0
+      ],
+      "native_unavailable_rate": {
+        "text": 0.0,
+        "audio": 0.0008454514710855597,
+        "vision": 0.055266512317577586
+      },
+      "nonfinite_original": {
+        "audio": 0,
+        "vision": 0
+      }
+    },
+    "valid": {
+      "n": 728,
+      "class_counts": [
+        206,
+        184,
+        338
+      ],
+      "content_length_quantiles": [
+        1.0,
+        15.0,
+        21.5,
+        31.0,
+        48.0
+      ],
+      "native_unavailable_rate": {
+        "text": 0.0,
+        "audio": 0.002678779408339157,
+        "vision": 0.057069648264616815
+      },
+      "nonfinite_original": {
+        "audio": 0,
+        "vision": 0
+      }
+    },
+    "test": {
+      "n": 727,
+      "class_counts": [
+        207,
+        158,
+        362
+      ],
+      "content_length_quantiles": [
+        2.0,
+        14.0,
+        21.0,
+        30.0,
+        48.0
+      ],
+      "native_unavailable_rate": {
+        "text": 0.0,
+        "audio": 0.0,
+        "vision": 0.06075348561257787
+      },
+      "nonfinite_original": {
+        "audio": 0,
+        "vision": 0
+      }
+    }
+  },
+  "text_input": "text_bert only; text/raw_text are not model inputs",
+  "native_zero_rule": "unavailable (not proof of artificial deletion)",
+  "native_zero_ambiguity": "Original naturally all-zero A/V positions cannot be distinguished from deleted positions.",
+  "time_rule": "prefix through last occupied token/A/V; exclude CLS and SEP from content",
+  "normalization": "train observed content only; z-score, clip [-5,5], unavailable reset to zero",
+  "id_overlap": {
+    "train_valid": 0,
+    "train_test": 0,
+    "valid_test": 0
+  },
+  "video_overlap": {
+    "train_valid": 0,
+    "train_test": 0,
+    "valid_test": 0
+  },
+  "source_sha256": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd"
+}

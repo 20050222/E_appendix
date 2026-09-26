@@ -1,0 +1,23 @@
+{
+  "model_name": "bert-base-uncased",
+  "model_source": "bert-base-uncased",
+  "device": "cpu",
+  "python": "3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:27:10) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "torch_version": "2.6.0+cpu",
+  "transformers_version": "4.49.0",
+  "hidden_size": 768,
+  "max_length": 256,
+  "time_bins": 50,
+  "random_seed": 42,
+  "alignment_method": "uniform_tokens",
+  "model_commit_hash": "86b5e0934494bd15c9632b12f734a8a67f723594",
+  "tokenizer_class": "BertTokenizerFast",
+  "tokenizer_name_or_path": "bert-base-uncased",
+  "cuda_version": null,
+  "cudnn_version": null,
+  "gpu_name": null,
+  "cublas_workspace_config": null,
+  "deterministic_algorithms": true,
+  "raw_index": "stepA_index/data/sample_index.csv"
+}

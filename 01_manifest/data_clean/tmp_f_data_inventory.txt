@@ -1,0 +1,117 @@
+FILE A_data_value/domain_mapping_guide.csv rows=15 cols=4
+HEADER mixture_domain || quality_domain || mapping_type || note
+SAMPLE arxiv || arxiv || direct || �䷽�����������ź�����һ��
+SAMPLE github || github || direct || �䷽�����������ź�����һ��
+SAMPLE stackexchange || stackexchange || direct || �䷽�����������ź�����һ��
+FILE A_data_value/regmix_tables/train_mixture_1m.csv rows=510 cols=18
+HEADER index || train_the_pile_arxiv || train_the_pile_freelaw || train_the_pile_nih_exporter || train_the_pile_pubmed_central || train_the_pile_wikipedia_en || train_the_pile_dm_mathematics || train_the_pile_github || train_the_pile_philpapers || train_the_pile_stackexchange || train_the_pile_enron_emails || train_the_pile_gutenberg_pg_19 || train_the_pile_pile_cc || train_the_pile_ubuntu_irc || train_the_pile_europarl || train_the_pile_hackernews || train_the_pile_pubmed_abstracts || train_the_pile_uspto_backgrounds
+SAMPLE 1 || 0.0 || 0.0 || 0.0 || 0.0 || 0.0 || 0.0 || 0.0 || 0.004 || 0.0 || 0.0 || 0.209
+SAMPLE 2 || 0.025 || 0.002 || 0.05 || 0.0 || 0.047 || 0.0 || 0.304 || 0.009 || 0.003 || 0.001 || 0.103
+SAMPLE 3 || 0.679 || 0.0 || 0.0 || 0.044 || 0.0 || 0.001 || 0.0 || 0.003 || 0.0 || 0.001 || 0.0
+FILE A_data_value/regmix_tables/train_pile_loss_1m.csv rows=510 cols=14
+HEADER index || metric/the_pile_arxiv_val_loss || metric/the_pile_freelaw_val_loss || metric/the_pile_pubmed_central_val_loss || metric/the_pile_wikipedia_en_val_loss || metric/the_pile_dm_mathematics_val_loss || metric/the_pile_github_val_loss || metric/the_pile_stackexchange_val_loss || metric/the_pile_gutenberg_pg_19_val_loss || metric/the_pile_pile_cc_val_loss || metric/the_pile_ubuntu_irc_val_loss || metric/the_pile_hackernews_val_loss || metric/the_pile_pubmed_abstracts_val_loss || metric/the_pile_uspto_backgrounds_val_loss
+SAMPLE 1 || 7.0255866050720215 || 5.360580921173096 || 6.536046981811523 || 5.639575004577637 || 5.820674896240234 || 6.632823467254639 || 6.107803821563721 || 4.726566791534424 || 5.169477939605713 || 7.224245071411133 || 5.206871032714844
+SAMPLE 2 || 4.738541603088379 || 5.466145038604736 || 5.808464050292969 || 5.42556619644165 || 4.61490535736084 || 4.141744136810303 || 4.922904014587402 || 4.954422473907471 || 5.343518733978272 || 5.278083324432373 || 4.80118989944458
+SAMPLE 3 || 3.730258703231812 || 5.793972492218018 || 4.72146463394165 || 5.933119773864746 || 4.077418327331543 || 6.540956497192383 || 6.079324245452881 || 5.561453819274902 || 5.506680965423584 || 7.476072311401367 || 5.495143413543701
+FILE A_data_value/regmix_tables/test_mixture_1m.csv rows=254 cols=18
+HEADER index || train_the_pile_arxiv || train_the_pile_freelaw || train_the_pile_nih_exporter || train_the_pile_pubmed_central || train_the_pile_wikipedia_en || train_the_pile_dm_mathematics || train_the_pile_github || train_the_pile_philpapers || train_the_pile_stackexchange || train_the_pile_enron_emails || train_the_pile_gutenberg_pg_19 || train_the_pile_pile_cc || train_the_pile_ubuntu_irc || train_the_pile_europarl || train_the_pile_hackernews || train_the_pile_pubmed_abstracts || train_the_pile_uspto_backgrounds
+SAMPLE 1 || 0.08 || 0.0 || 0.0 || 0.464 || 0.0 || 0.0 || 0.0 || 0.0 || 0.0 || 0.0 || 0.015
+SAMPLE 2 || 0.035 || 0.016 || 0.0 || 0.022 || 0.0 || 0.04 || 0.0 || 0.001 || 0.097 || 0.0 || 0.0
+SAMPLE 3 || 0.014 || 0.0 || 0.004 || 0.022 || 0.003 || 0.084 || 0.477 || 0.0 || 0.0 || 0.0 || 0.209
+FILE A_data_value/regmix_tables/test_pile_loss_1m.csv rows=254 cols=14
+HEADER index || metric/the_pile_arxiv_val_loss || metric/the_pile_freelaw_val_loss || metric/the_pile_pubmed_central_val_loss || metric/the_pile_wikipedia_en_val_loss || metric/the_pile_dm_mathematics_val_loss || metric/the_pile_github_val_loss || metric/the_pile_stackexchange_val_loss || metric/the_pile_gutenberg_pg_19_val_loss || metric/the_pile_pile_cc_val_loss || metric/the_pile_ubuntu_irc_val_loss || metric/the_pile_hackernews_val_loss || metric/the_pile_pubmed_abstracts_val_loss || metric/the_pile_uspto_backgrounds_val_loss
+SAMPLE 1 || 4.409877777099609 || 5.640962600708008 || 4.020509719848633 || 5.786686897277832 || 5.373439788818359 || 6.537395000457764 || 6.013463020324707 || 5.168976306915283 || 5.318245887756348 || 6.67406177520752 || 4.873101711273193
+SAMPLE 2 || 4.512282848358154 || 4.921931266784668 || 4.903955459594727 || 5.70341682434082 || 2.097456693649292 || 5.441458225250244 || 4.677060604095459 || 5.2638750076293945 || 5.180474281311035 || 5.07625675201416 || 5.219114780426025
+SAMPLE 3 || 4.88704776763916 || 5.998435020446777 || 4.854981422424316 || 5.9705963134765625 || 2.0013649463653564 || 3.97126579284668 || 4.995669364929199 || 4.931246757507324 || 5.765591144561768 || 7.315047264099121 || 5.19017219543457
+FILE A_data_value/regmix_tables/test_mixture_60m.csv rows=254 cols=18
+HEADER index || train_the_pile_arxiv || train_the_pile_freelaw || train_the_pile_nih_exporter || train_the_pile_pubmed_central || train_the_pile_wikipedia_en || train_the_pile_dm_mathematics || train_the_pile_github || train_the_pile_philpapers || train_the_pile_stackexchange || train_the_pile_enron_emails || train_the_pile_gutenberg_pg_19 || train_the_pile_pile_cc || train_the_pile_ubuntu_irc || train_the_pile_europarl || train_the_pile_hackernews || train_the_pile_pubmed_abstracts || train_the_pile_uspto_backgrounds
+SAMPLE 1 || 0.08 || 0.0 || 0.0 || 0.464 || 0.0 || 0.0 || 0.0 || 0.0 || 0.0 || 0.0 || 0.015
+SAMPLE 2 || 0.035 || 0.016 || 0.0 || 0.022 || 0.0 || 0.04 || 0.0 || 0.001 || 0.097 || 0.0 || 0.0
+SAMPLE 3 || 0.014 || 0.0 || 0.004 || 0.022 || 0.003 || 0.084 || 0.477 || 0.0 || 0.0 || 0.0 || 0.209
+FILE A_data_value/regmix_tables/test_pile_loss_60m.csv rows=254 cols=14
+HEADER index || metric/the_pile_arxiv_val_loss || metric/the_pile_freelaw_val_loss || metric/the_pile_pubmed_central_val_loss || metric/the_pile_wikipedia_en_val_loss || metric/the_pile_dm_mathematics_val_loss || metric/the_pile_github_val_loss || metric/the_pile_stackexchange_val_loss || metric/the_pile_gutenberg_pg_19_val_loss || metric/the_pile_pile_cc_val_loss || metric/the_pile_ubuntu_irc_val_loss || metric/the_pile_hackernews_val_loss || metric/the_pile_pubmed_abstracts_val_loss || metric/the_pile_uspto_backgrounds_val_loss
+SAMPLE 1 || 2.9710326194763184 || 4.223860740661621 || 2.7380499839782715 || 4.429556369781494 || 3.3373360633850098 || 3.5947976112365723 || 4.206147193908691 || 4.260997772216797 || 4.253109455108643 || 4.78766393661499 || 3.9552814960479736
+SAMPLE 2 || 3.040354013442993 || 3.640716075897217 || 3.3398211002349854 || 4.337239742279053 || 1.6829262971878052 || 2.788279294967652 || 3.1255481243133545 || 4.329345703125 || 4.123269557952881 || 3.627320528030396 || 4.225762367248535
+SAMPLE 3 || 3.236415386199951 || 4.567698955535889 || 3.2393157482147217 || 4.611217021942139 || 1.5915392637252808 || 1.8803625106811523 || 3.390350818634033 || 4.027015209197998 || 4.73043155670166 || 5.05939245223999 || 4.225453853607178
+FILE A_data_value/regmix_tables/test_mixture_1B.csv rows=62 cols=18
+HEADER index || train_the_pile_arxiv || train_the_pile_freelaw || train_the_pile_nih_exporter || train_the_pile_pubmed_central || train_the_pile_wikipedia_en || train_the_pile_dm_mathematics || train_the_pile_github || train_the_pile_philpapers || train_the_pile_stackexchange || train_the_pile_enron_emails || train_the_pile_gutenberg_pg_19 || train_the_pile_pile_cc || train_the_pile_ubuntu_irc || train_the_pile_europarl || train_the_pile_hackernews || train_the_pile_pubmed_abstracts || train_the_pile_uspto_backgrounds
+SAMPLE 0 || 0.123 || 0.065 || 0.0 || 0.126 || 0.036 || 0.0 || 0.034 || 0.0 || 0.039 || 0.0 || 0.0
+SAMPLE 1 || 0.066 || 0.071 || 0.0 || 0.211 || 0.013 || 0.0 || 0.153 || 0.033 || 0.097 || 0.0 || 0.0
+SAMPLE 2 || 0.055 || 0.052 || 0.004 || 0.177 || 0.02 || 0.011 || 0.095 || 0.0 || 0.18 || 0.0 || 0.016
+FILE A_data_value/regmix_tables/test_pile_loss_1B.csv rows=62 cols=14
+HEADER index || metric/the_pile_arxiv_val_loss || metric/the_pile_freelaw_val_loss || metric/the_pile_pubmed_central_val_loss || metric/the_pile_wikipedia_en_val_loss || metric/the_pile_dm_mathematics_val_loss || metric/the_pile_github_val_loss || metric/the_pile_stackexchange_val_loss || metric/the_pile_gutenberg_pg_19_val_loss || metric/the_pile_pile_cc_val_loss || metric/the_pile_ubuntu_irc_val_loss || metric/the_pile_hackernews_val_loss || metric/the_pile_pubmed_abstracts_val_loss || metric/the_pile_uspto_backgrounds_val_loss
+SAMPLE 0 || 1.772475243 || 1.929630041 || 1.771565676 || 2.464135885 || 2.071599376 || 1.139918923 || 1.869868159 || 3.004983805 || 2.932116032 || 2.854564877 || 3.07279878
+SAMPLE 1 || 1.82132411 || 1.933466315 || 1.707535386 || 2.625478745 || 1.660228216 || 0.945311725 || 1.759435415 || 3.127051616 || 3.065447092 || 2.910561164 || 2.84590098
+SAMPLE 2 || 1.852889061 || 1.95453918 || 1.763566494 || 2.495107412 || 1.34842858 || 0.982568622 || 1.703691363 || 2.664145139 || 2.887698889 || 2.552369055 || 2.810529253
+FILE A_data_value/regmix_tables/est_mixture_10b.csv rows=61 cols=18
+HEADER index || train_the_pile_arxiv || train_the_pile_freelaw || train_the_pile_nih_exporter || train_the_pile_pubmed_central || train_the_pile_wikipedia_en || train_the_pile_dm_mathematics || train_the_pile_github || train_the_pile_philpapers || train_the_pile_stackexchange || train_the_pile_enron_emails || train_the_pile_gutenberg_pg_19 || train_the_pile_pile_cc || train_the_pile_ubuntu_irc || train_the_pile_europarl || train_the_pile_hackernews || train_the_pile_pubmed_abstracts || train_the_pile_uspto_backgrounds
+SAMPLE 1 || 0.0 || 0.0 || 0.0 || 0.0 || 0.0 || 0.0 || 0.0 || 0.004 || 0.0 || 0.0 || 0.209
+SAMPLE 2 || 0.025 || 0.002 || 0.05 || 0.0 || 0.047 || 0.0 || 0.304 || 0.009 || 0.003 || 0.001 || 0.103
+SAMPLE 3 || 0.679 || 0.0 || 0.0 || 0.044 || 0.0 || 0.001 || 0.0 || 0.003 || 0.0 || 0.001 || 0.0
+FILE A_data_value/regmix_tables/est_pile_loss_10b.csv rows=61 cols=14
+HEADER index || metric/the_pile_arxiv_val_loss || metric/the_pile_freelaw_val_loss || metric/the_pile_pubmed_central_val_loss || metric/the_pile_wikipedia_en_val_loss || metric/the_pile_dm_mathematics_val_loss || metric/the_pile_github_val_loss || metric/the_pile_stackexchange_val_loss || metric/the_pile_gutenberg_pg_19_val_loss || metric/the_pile_pile_cc_val_loss || metric/the_pile_ubuntu_irc_val_loss || metric/the_pile_hackernews_val_loss || metric/the_pile_pubmed_abstracts_val_loss || metric/the_pile_uspto_backgrounds_val_loss
+SAMPLE 1 || 2.0364 || 1.5538 || 1.8945 || 1.6347 || 1.6872 || 1.9226 || 1.7704 || 1.3700 || 1.4984 || 2.0940 || 1.5093
+SAMPLE 2 || 1.5864 || 1.8299 || 1.9445 || 1.8164 || 1.5450 || 1.3866 || 1.6481 || 1.6586 || 1.7889 || 1.7670 || 1.6073
+SAMPLE 3 || 1.2130 || 1.8841 || 1.5353 || 1.9293 || 1.3259 || 2.1270 || 1.9768 || 1.8085 || 1.7906 || 2.4310 || 1.7869
+FILE A_data_value/regmix_tables/est_mixture_70b.csv rows=61 cols=18
+HEADER index || train_the_pile_arxiv || train_the_pile_freelaw || train_the_pile_nih_exporter || train_the_pile_pubmed_central || train_the_pile_wikipedia_en || train_the_pile_dm_mathematics || train_the_pile_github || train_the_pile_philpapers || train_the_pile_stackexchange || train_the_pile_enron_emails || train_the_pile_gutenberg_pg_19 || train_the_pile_pile_cc || train_the_pile_ubuntu_irc || train_the_pile_europarl || train_the_pile_hackernews || train_the_pile_pubmed_abstracts || train_the_pile_uspto_backgrounds
+SAMPLE 1 || 0.0 || 0.0 || 0.0 || 0.0 || 0.0 || 0.0 || 0.0 || 0.004 || 0.0 || 0.0 || 0.209
+SAMPLE 2 || 0.025 || 0.002 || 0.05 || 0.0 || 0.047 || 0.0 || 0.304 || 0.009 || 0.003 || 0.001 || 0.103
+SAMPLE 3 || 0.679 || 0.0 || 0.0 || 0.044 || 0.0 || 0.001 || 0.0 || 0.003 || 0.0 || 0.001 || 0.0
+FILE A_data_value/regmix_tables/est_pile_loss_70b.csv rows=61 cols=14
+HEADER index || metric/the_pile_arxiv_val_loss || metric/the_pile_freelaw_val_loss || metric/the_pile_pubmed_central_val_loss || metric/the_pile_wikipedia_en_val_loss || metric/the_pile_dm_mathematics_val_loss || metric/the_pile_github_val_loss || metric/the_pile_stackexchange_val_loss || metric/the_pile_gutenberg_pg_19_val_loss || metric/the_pile_pile_cc_val_loss || metric/the_pile_ubuntu_irc_val_loss || metric/the_pile_hackernews_val_loss || metric/the_pile_pubmed_abstracts_val_loss || metric/the_pile_uspto_backgrounds_val_loss
+SAMPLE 1 || 1.5541 || 1.1858 || 1.4458 || 1.2475 || 1.2876 || 1.4672 || 1.3511 || 1.0456 || 1.1435 || 1.5981 || 1.1518
+SAMPLE 2 || 1.2489 || 1.4407 || 1.5309 || 1.4300 || 1.2163 || 1.0916 || 1.2975 || 1.3058 || 1.4084 || 1.3911 || 1.2654
+SAMPLE 3 || 0.9504 || 1.4762 || 1.2029 || 1.5116 || 1.0388 || 1.6665 || 1.5489 || 1.4169 || 1.4030 || 1.9047 || 1.4000
+FILE B_scaling_laws/pythia_training_log_existing.csv rows=1174 cols=15
+HEADER run_id || N_params_B || D_tokens_B || C_FLOPs_1e21 || steps || batch_tokens_M || lr || wd || precision || gpu_days || step_time_ms || train_loss || val_loss || ppl || grad_norm_avg
+SAMPLE 8 || 0.070542 || 0.134 || 0.0001 || 64 || 2.09 || 0.000318 || 0.088 || bf16 || 0.0 || 100.4 || 4.4729
+SAMPLE 9 || 0.070542 || 0.268 || 0.0001 || 128 || 2.09 || 0.000318 || 0.098 || fp16 || 0.0 || 100.4 || 4.1411
+SAMPLE 10 || 0.070542 || 0.537 || 0.0002 || 256 || 2.1 || 0.000318 || 0.053 || bf16 || 0.0 || 100.4 || 3.9212
+FILE B_scaling_laws/cerebras_training_log.csv rows=1027 cols=15
+HEADER run_id || N_params_B || D_tokens_B || C_FLOPs_1e21 || steps || batch_tokens_M || lr || wd || precision || gpu_days || step_time_ms || train_loss || val_loss || ppl || grad_norm_avg
+SAMPLE cerebras_0.111B || 0.111 || 14.000 || 0.009548 || 1000 || 14.3 || 6e-4 || 0.1 || bf16 ||  ||  || 6.5040
+SAMPLE cerebras_0.111B || 0.111 || 29.000 || 0.019095 || 2000 || 14.3 || 6e-4 || 0.1 || bf16 ||  ||  || 5.8141
+SAMPLE cerebras_0.111B || 0.111 || 43.000 || 0.028643 || 3000 || 14.3 || 6e-4 || 0.1 || bf16 ||  ||  || 5.4758
+FILE B_scaling_laws/scaling_baseline.csv rows=55 cols=5
+HEADER family || N_params_B || D_tokens_B || val_loss || is_converged
+SAMPLE Phi || 1.3 || 405 || 2.5317 || 1
+SAMPLE LLaMA || 65.0 || 11349 || 1.8828 || 1
+SAMPLE LLaMA || 13.0 || 2229 || 2.0796 || 1
+FILE B_scaling_laws/supplementary_NQ_experiment.csv rows=358 cols=5
+HEADER experiment_id || N_params_B || D_tokens_B || Q_score || val_loss
+SAMPLE N0.07_D0010_Q0.1 || 0.07 || 10 || 0.1 || 3.7216
+SAMPLE N0.07_D0010_Q0.2 || 0.07 || 10 || 0.2 || 3.6004
+SAMPLE N0.07_D0010_Q0.3 || 0.07 || 10 || 0.3 || 3.6507
+FILE B_scaling_laws/supplementary_NQ_experiment_expanded.csv rows=448 cols=5
+HEADER experiment_id || N_params_B || D_tokens_B || Q_score || val_loss
+SAMPLE N0.07_D0010_Q0.1 || 0.07 || 10 || 0.1 || 3.7216
+SAMPLE N0.07_D0010_Q0.2 || 0.07 || 10 || 0.2 || 3.6004
+SAMPLE N0.07_D0010_Q0.3 || 0.07 || 10 || 0.3 || 3.6507
+FILE B_scaling_laws/supplementary_NQ_experiment_large.csv rows=1702 cols=6
+HEADER experiment_id || N_params_B || D_tokens_B || Q_score || val_loss || data_type
+SAMPLE N0.07_D0005_Q0.05 || 0.07 || 5 || 0.05 || 1.0401 || calibrated
+SAMPLE N0.07_D0005_Q0.1 || 0.07 || 5 || 0.1 || 1.1624 || calibrated
+SAMPLE N0.07_D0005_Q0.2 || 0.07 || 5 || 0.2 || 1.4286 || calibrated
+FILE B_scaling_laws/supplementary_large_baseline.csv rows=126 cols=5
+HEADER family || N_params_B || D_tokens_B || val_loss || is_converged
+SAMPLE Ling-flash-base-2.0-20T || 100.0 || 20000.0 || 1.8412 || 1
+SAMPLE FaXin || 100.0 || 3670.0 || 1.8882 || 1
+SAMPLE PLaMo-100B || 100.0 || 2000.0 || 1.9112 || 1
+FILE B_scaling_laws/supplementary_large_models.csv rows=130 cols=8
+HEADER model_name || N_params_B || D_tokens_B || FLOPs || publication_date || organization || accessibility || country
+SAMPLE Ling-flash-base-2.0-20T || 100.0 || 20000.0 || 7.320e+23 || 2025-09-10 || Ant Group || Open weights (unrestricted) || China
+SAMPLE FaXin || 100.0 || 3670.0 ||  || 2024-11-15 ||  ||  || 
+SAMPLE PLaMo-100B || 100.0 || 2000.0 || 1.200e+24 || 2024-06-14 || Preferred Networks Inc || API access || Japan
+FILE B_scaling_laws/published_scaling_data.csv rows=42 cols=6
+HEADER family || N_params_B || D_tokens_B || val_loss || source || is_converged
+SAMPLE GPT-2 || 1.5 || 10 || 2.906 || Kaplan et al. 2020 || 1
+SAMPLE GPT-3 || 0.125 || 300 || 2.761 || Kaplan et al. 2020 || 1
+SAMPLE GPT-3 || 0.35 || 300 || 2.632 || Kaplan et al. 2020 || 1
+FILE B_scaling_laws/open_model_family_metadata.csv rows=16 cols=8
+HEADER family || model_repo || config_bytes || readme_bytes || weight_file_count || weight_total_bytes || source_url || error
+SAMPLE pythia || EleutherAI/pythia-14m || 698 || 10560 || 2 || 56303938 || https://huggingface.co/EleutherAI/pythia-14m || 
+SAMPLE pythia || EleutherAI/pythia-70m || 567 || 14256 || 2 || 332078951 || https://huggingface.co/EleutherAI/pythia-70m || 
+SAMPLE pythia || EleutherAI/pythia-160m || 569 || 13593 || 2 || 750035541 || https://huggingface.co/EleutherAI/pythia-160m || 
+FILE C_efficiency_evolution/leaderboard_cleaned.csv rows=4574 cols=12
+HEADER 
